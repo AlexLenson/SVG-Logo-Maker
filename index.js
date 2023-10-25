@@ -54,23 +54,6 @@ inquirer.prompt(questions).then((answers) => {
         console.log('Invalid shape selection.');
     }
     
-    // switch (answers.shape) {
-    //     case 'Triangle':
-    //         triangle.setColor(answers.shapeColor);
-    //         logo.setShape(triangle);
-    //         break;
-    //     case 'Circle':
-    //         circle.setColor(answers.shapeColor);
-    //         logo.setShape(circle);
-    //         break;
-    //     case 'Square':
-    //         square.setColor(answers.shapeColor);
-    //         logo.setShape(square);
-    //         break;
-    //     default:
-    //         console.log('Invalid shape selection.');
-    // }
-
     // Render the logo and save it to an SVG file
     const svgContent = logo.render();
     fs.writeFile('logo.svg', svgContent, (err) => 
